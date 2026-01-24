@@ -32,16 +32,24 @@ The website features animations, game-inspired visuals, and interactive sections
 ## 📂 Project Structure
 
 ```
-Personal-Portfolio/
-│── ArcePortfolio.html
-│── styles.css
-│── script.js
-│── assets/
-│   ├── images/
-│   └── icons/
-│── snake.html
-│── fireworks.html
-│── README.md
+main
+│
+├── index.html
+├── README.md
+└── assets/
+    ├── css/
+    │   └── styles.css
+    ├── js/
+    │   └── script.js
+    ├── images/
+    │   ├── 1X1.jpg
+    │   ├── credly.png
+    │   ├── keyhunter.png
+    │   └── portfolio.png
+    └── html/
+        ├── fireworks.html
+        └── snake.html
+
 ```
 
 ---
