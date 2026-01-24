@@ -58,7 +58,7 @@ main
 
 1. Download or clone the repository
 2. Make sure all files are in the same folder structure
-3. Open `ArcePortfolio.html` in any modern web browser
+3. Open `index.html` in any modern web browser
 
 ---
 
