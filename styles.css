@@ -166,7 +166,7 @@ nav a:active {
 
 section {
     min-height: 100vh;
-    padding: 6rem 10%;
+    padding: 10rem 10% 6rem 10%;
     position: relative;
     z-index: 1;
 }
@@ -520,6 +520,124 @@ h2::after {
     margin-bottom: 1rem;
     font-weight: bold;
     border: 3px solid white;
+}
+
+.certifications-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.certification-item {
+    background: var(--mario-red);
+    color: white;
+    padding: 2.5rem;
+    border-radius: 20px;
+    border: 6px solid var(--mario-yellow);
+    box-shadow: 0 8px 0 #8b0000, 0 12px 30px rgba(0,0,0,0.3);
+    text-align: center;
+    transition: all 0.4s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+    display: block;
+}
+
+.certification-item::before {
+    content: '⭐';
+    position: absolute;
+    font-size: 15rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.1;
+    animation: rotate-star 6s linear infinite;
+}
+
+.certification-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 12px 0 #8b0000, 0 16px 40px rgba(0,0,0,0.4);
+}
+
+.badge-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1.5rem;
+    position: relative;
+    z-index: 1;
+    background: white;
+    border-radius: 50%;
+    padding: 1rem;
+    border: 5px solid var(--mario-yellow);
+    box-shadow: 0 6px 0 #8b0000, 0 8px 20px rgba(0,0,0,0.3);
+    animation: bounce 2s ease-in-out infinite;
+}
+
+.badge-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.badge-icon {
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    animation: bounce 2s ease-in-out infinite;
+    position: relative;
+    z-index: 1;
+}
+
+.certification-item h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    z-index: 1;
+}
+
+.certification-item p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.badge-date {
+    background: var(--mario-yellow);
+    color: var(--mario-red);
+    padding: 0.5rem 1.5rem;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 3px solid white;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    margin-bottom: 1rem;
+}
+
+.view-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-top: 1rem;
+    padding: 0.8rem 1.5rem;
+    background: white;
+    color: var(--mario-red);
+    border-radius: 25px;
+    font-weight: bold;
+    border: 3px solid var(--mario-yellow);
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s;
+}
+
+.certification-item:hover .view-badge {
+    background: var(--mario-yellow);
+    transform: scale(1.1);
+}
+
+.view-badge svg {
+    flex-shrink: 0;
 }
 
 .projects-grid {
